@@ -79,10 +79,10 @@ def main():
         module.fail_json(msg="No TerraForm Templates found in %s " %working_dir)
 
 # Clean up tfvars/backups
- #    if clean:
- #       for files in os.listdir(working_dir):
- #          if re.search(".*\.(tfstate)(\.tfbackup)?", files):
- #             os.remove(os.path.join(working_dir, files))
+    if clean:
+       for files in os.listdir(working_dir):
+          if re.search(".*\.(tfstate)(\.tfbackup)?", files):
+            os.remove(os.path.join(working_dir, files))
 
 
 # Terraform command validate
