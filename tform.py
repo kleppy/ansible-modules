@@ -29,7 +29,7 @@ examples:
   -
   connection: local
   tasks:
-  - tform: working_dir=/root/scratch/tform/terraform_proj/production/server tfcommand=destroy
+  - tform: working_dir=~/tform/server tfcommand=destroy
     environment:
       VSPHERE_USER: 'admin'
       VSPHERE_PASSWORD: 'f00f00'
