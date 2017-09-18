@@ -81,7 +81,7 @@ def main():
 # Clean up tfvars/backups
     if clean:
        for files in os.listdir(working_dir):
-          if re.search(".*\.(tfstate)(\.tfbackup)?", files):
+          if re.search(".*\.(tfstate)(\.tfstate.backup)?", files):
             os.remove(os.path.join(working_dir, files))
 
 
